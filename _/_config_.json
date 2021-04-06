@@ -1,0 +1,30 @@
+{
+    "qqmail": {
+        "host": "",
+        "port": 0,
+        "user": "",
+        "password": ""
+    },
+    "redis": {
+        "host": "",
+        "port": 0,
+        "password": ""
+    },
+    "mongodb": {
+        "host": "",
+        "port": 0,
+        "password": ""
+    },
+    "mysql": {
+        "host": "",
+        "user": "",
+        "port": 0,
+        "password": ""
+    },
+    "ssh": {
+        "host": "",
+        "user": "",
+        "port": 0,
+        "rsa": ""
+    }
+}
