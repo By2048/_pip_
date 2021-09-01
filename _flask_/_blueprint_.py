@@ -1,14 +1,20 @@
-from flask import Flask, url_for, Blueprint, request
+#
+from flask import \
+    Flask, \
+    url_for, \
+    Blueprint, \
+    request
 
 app = Flask(__name__)
 
 user = Blueprint("user", __name__, url_prefix="/user")
 admin = Blueprint("admin", __name__, url_prefix="/admin")
+# https://dormousehole.readthedocs.io/en/latest/blueprints.html
 
 
 @user.route('/index')
 def index():
-    pass
+    return
 
 
 @admin.route('/index')

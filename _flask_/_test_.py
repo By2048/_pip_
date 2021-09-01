@@ -1,16 +1,21 @@
-from flask import Flask, request, jsonify
+from flask import \
+    Flask, \
+    request, \
+    jsonify, \
+    redirect, \
+    Response, \
+    session
 
-app = Flask(__name__)
-
-PORT = 1234
+app = Flask('_test_')
+app.secret_key = 'qwe123'
 
 
 @app.route('/', methods="get post".split())
 def index():
     path = request.path
+    session['name'] = 123
     return 'index'
 
 
 if __name__ == '__main__':
-    print(f'server start at {PORT}')
-    app.run(host='::', port=PORT, debug=True)
+    app.run()

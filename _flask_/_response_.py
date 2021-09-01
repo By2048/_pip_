@@ -1,4 +1,9 @@
-from flask import make_response, Flask, request, session
+from flask import \
+    Flask, \
+    make_response, \
+    request, \
+    session, \
+    flash
 
 app = Flask(__name__)
 
@@ -6,6 +11,7 @@ app = Flask(__name__)
 @app.route("/index")
 def index():
     response = make_response()
+    response.set_cookie('k', 'v')
     return response
 
 
